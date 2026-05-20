@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-20T08:06:50.268962",
+    "last_updated": "2026-05-20T11:20:13.907320",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.112"
@@ -103,10 +103,10 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
+        "status": "green",
+        "value": 53.0,
         "baseline_7d": 53.0,
-        "delta_pct": null
+        "delta_pct": 0.0
       },
       "rhr": {
         "status": "green",
@@ -115,17 +115,17 @@
         "delta_bpm": 0.1
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "amber",
+        "hours": 6.9,
+        "quality": 3
       },
       "acwr": {
         "status": "green",
         "value": 0.53
       },
       "ri": {
-        "status": "unavailable",
-        "value": null,
+        "status": "green",
+        "value": 1.0,
         "value_yesterday": 1.11
       },
       "tsb": {
@@ -134,10 +134,10 @@
       }
     },
     "signal_summary": {
-      "green": 3,
-      "amber": 0,
+      "green": 5,
+      "amber": 1,
       "red": 0,
-      "unavailable": 3
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -147,7 +147,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 3 green, 0 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -227,11 +227,11 @@
         }
       },
       "resting_hr": 49,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_score": null,
+      "hrv": 53.0,
+      "sleep_quality": 3,
+      "sleep_hours": 6.9,
+      "sleep_formatted": "6h54m",
+      "sleep_score": 73.0,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -248,7 +248,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 91,
+      "steps": 2320,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -273,13 +273,13 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
+    "recovery_index": 1.0,
     "recovery_index_yesterday": 1.11,
     "hrv_baseline_7d": 53.0,
     "rhr_baseline_7d": 48.9,
-    "hrv_baseline_28d": 49.7,
+    "hrv_baseline_28d": 49.8,
     "rhr_baseline_28d": 48.8,
-    "latest_hrv": null,
+    "latest_hrv": 53.0,
     "latest_rhr": 49,
     "acwr": 0.53,
     "acwr_interpretation": "undertraining",
@@ -292,7 +292,7 @@
     "multi_sport_detected": false,
     "strain": 160.0,
     "stress_tolerance": 3.0,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 3.0,
     "tss_7d_total": 296.0,
     "tss_28d_total": 2217.0,
     "zone_distribution_7d": {
@@ -637,9 +637,9 @@
     "p_max": 1121,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-20T08:06:50.267741",
+    "calculation_timestamp": "2026-05-20T11:20:13.906099",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 2,
       "activities_28d": 15,
@@ -3659,12 +3659,12 @@
         "weight": null
       },
       "resting_hr": 49,
-      "hrv_rmssd": null,
+      "hrv_rmssd": 53.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 6.9,
+      "sleep_formatted": "6h54m",
+      "sleep_quality": 3,
+      "sleep_score": 73.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -3684,7 +3684,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 91,
+      "steps": 2320,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
