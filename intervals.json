@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T11:46:29.710235",
+  "generated_at": "2026-06-06T12:50:14.349390",
   "version": "3.112",
   "script_hash": "a60c2ee19b34",
   "scan_hours": 72,
@@ -2046,6 +2046,26 @@
           "avg_cadence": 79.78824,
           "zone": 3,
           "training_load": 4.823197
+        }
+      ]
+    },
+    {
+      "activity_id": "i154786714",
+      "date": "2026-06-06",
+      "type": "Ride",
+      "name": "Puigcerd\u00e0 Road Cycling",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1414,
+          "avg_power": 84,
+          "max_power": 369,
+          "avg_hr": 115,
+          "max_hr": 143,
+          "avg_cadence": 45.83598,
+          "zone": 1,
+          "training_load": 6.6862803
         }
       ]
     }
