@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T04:35:06.084897",
+  "generated_at": "2026-06-06T07:36:59.031038",
   "version": "3.112",
   "script_hash": "a60c2ee19b34",
   "scan_hours": 72,
@@ -1500,6 +1500,27 @@
           "zone": 1,
           "training_load": 17.25198,
           "decoupling": -6.1584682
+        }
+      ]
+    },
+    {
+      "activity_id": "i154704562",
+      "date": "2026-06-06",
+      "type": "Ride",
+      "name": "Fontanals de Cerdanya Road Cycling",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1460,
+          "avg_power": 148,
+          "max_power": 700,
+          "avg_hr": 136,
+          "max_hr": 160,
+          "avg_cadence": 63.369606,
+          "zone": 2,
+          "training_load": 15.464697,
+          "decoupling": 0.95754665
         }
       ]
     }
