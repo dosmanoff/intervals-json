@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T18:42:43.775980",
+  "generated_at": "2026-07-04T19:55:36.430037",
   "version": "3.112",
   "script_hash": "a60c2ee19b34",
   "scan_hours": 72,
@@ -760,6 +760,34 @@
           "duration_secs": 338,
           "avg_hr": 92,
           "max_hr": 109,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i162737038",
+      "date": "2026-07-04",
+      "type": "Ride",
+      "name": "Barcelona Cycling",
+      "interval_summary": [
+        "1x 2h34m 97bpm",
+        "1x 22m13s 105bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "9278s@97bpm",
+          "duration_secs": 9278,
+          "avg_hr": 97,
+          "max_hr": 138,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "1333s@105bpm",
+          "duration_secs": 1333,
+          "avg_hr": 105,
+          "max_hr": 138,
           "zone": 1
         }
       ]
