@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-05T18:15:10.171282",
+    "last_updated": "2026-07-05T19:44:19.156474",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.112"
@@ -97,10 +97,29 @@
     "years_on_platform": 4
   },
   "athlete_notes": null,
-  "alerts": [],
+  "alerts": [
+    {
+      "metric": "race_week",
+      "value": 0,
+      "severity": "info",
+      "threshold": "RACE_A within 7 days",
+      "context": "Race week D-0 of 'Tour de France 2026 \u2014 Stage 2: Tarragona \u2192 Barcelona'. Today: Race day, 0-0 TSS. Race effort",
+      "persistence_days": null,
+      "tier": 1
+    },
+    {
+      "metric": "race_week_tsb",
+      "value": -7.9,
+      "severity": "warning",
+      "threshold": "TSB target 10-25",
+      "context": "Projected race-day TSB -7.9 is below target range 10-25. Consider additional rest to reach target.",
+      "persistence_days": null,
+      "tier": 1
+    }
+  ],
   "readiness_decision": {
-    "recommendation": "go",
-    "priority": 3,
+    "recommendation": "modify",
+    "priority": 2,
     "signals": {
       "hrv": {
         "status": "green",
@@ -140,14 +159,23 @@
       "unavailable": 0
     },
     "phase_context": {
-      "phase": "Build",
+      "phase": "Taper",
       "phase_week": 1,
-      "amber_threshold": 3,
-      "modifier_applied": "build_loosened"
+      "amber_threshold": 1,
+      "modifier_applied": "race_week_tightened"
     },
-    "race_week_defers": false,
-    "modification": null,
-    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
+    "race_week_defers": true,
+    "modification": {
+      "triggers": [
+        "sleep"
+      ],
+      "suggested_adjustments": {
+        "intensity": "preserve",
+        "volume": "reduce",
+        "cap_zone": null
+      }
+    },
+    "reason": "P2 signal count. 1 amber (sleep) >= threshold 1.",
     "alarm_refs": []
   },
   "history": {
@@ -260,7 +288,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 4727,
+      "steps": 6669,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -581,10 +609,10 @@
       "note": "No planned workouts in period"
     },
     "phase_detection": {
-      "phase": "Build",
+      "phase": "Taper",
       "confidence": "medium",
       "reason_codes": [
-        "NO_PLANNED_WORKOUTS"
+        "RACE_IMMINENT"
       ],
       "basis": {
         "stream_1": {
@@ -595,12 +623,12 @@
         },
         "stream_2": {
           "planned_tss_delta": null,
-          "hard_sessions_planned": 0,
-          "current_week_hard_days_completed": 0,
-          "current_week_hard_days_total": 0,
-          "race_proximity": null,
+          "hard_sessions_planned": 1,
+          "current_week_hard_days_completed": 3,
+          "current_week_hard_days_total": 4,
+          "race_proximity": 0,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.0,
+          "plan_coverage_current_week": 0.25,
           "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
@@ -611,9 +639,9 @@
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Build",
+    "phase_detected": "Taper",
     "phase_triggers": [
-      "NO_PLANNED_WORKOUTS"
+      "RACE_IMMINENT"
     ],
     "seasonal_context": "Peak Race Season",
     "benchmark_indoor": {
@@ -636,13 +664,13 @@
     "p_max": 1097,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 55.0,
-    "calculation_timestamp": "2026-07-05T18:15:10.170109",
+    "calculation_timestamp": "2026-07-05T19:44:19.155242",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 5,
       "activities_28d": 18,
-      "planned_workouts_7d": 0,
+      "planned_workouts_7d": 1,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 55
@@ -3784,7 +3812,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 4727,
+      "steps": 6669,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -3795,7 +3823,22 @@
       "readiness": null
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 120746801,
+      "date": "2026-07-05",
+      "name": "Tour de France 2026 \u2014 Stage 2: Tarragona \u2192 Barcelona",
+      "type": "RACE_A",
+      "sport_type": "Ride",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "13:55",
+      "description": ""
+    }
+  ],
   "workout_summary_stats": {
     "attempted": 0,
     "success": 0,
@@ -3813,13 +3856,92 @@
     "avg_resting_hr": 51.0
   },
   "race_calendar": {
-    "next_race": null,
-    "all_races": [],
+    "next_race": {
+      "name": "Tour de France 2026 \u2014 Stage 2: Tarragona \u2192 Barcelona",
+      "date": "2026-07-05",
+      "category": "RACE_A",
+      "type": "Ride",
+      "days_until": 0,
+      "moving_time_seconds": null,
+      "distance_meters": null,
+      "display": {
+        "distance": null
+      },
+      "has_terrain": false,
+      "start_time": "13:55"
+    },
+    "all_races": [
+      {
+        "name": "Tour de France 2026 \u2014 Stage 2: Tarragona \u2192 Barcelona",
+        "date": "2026-07-05",
+        "category": "RACE_A",
+        "type": "Ride",
+        "days_until": 0,
+        "moving_time_seconds": null,
+        "distance_meters": null,
+        "display": {
+          "distance": null
+        },
+        "has_terrain": false,
+        "start_time": "13:55"
+      }
+    ],
     "taper_alert": {
       "active": false
     },
     "race_week": {
-      "active": false
+      "active": true,
+      "event_name": "Tour de France 2026 \u2014 Stage 2: Tarragona \u2192 Barcelona",
+      "event_date": "2026-07-05",
+      "event_category": "RACE_A",
+      "event_type": "Ride",
+      "event_duration_class": "long_endurance",
+      "event_moving_time_seconds": null,
+      "days_until_event": 0,
+      "current_day": "D-0",
+      "ctl_baseline": 68.4,
+      "normal_weekly_tss": 478.6,
+      "race_week_tss_budget": {
+        "min": 191,
+        "max": 263
+      },
+      "race_week_tss_spent": 611,
+      "race_week_tss_remaining": {
+        "min": 0,
+        "max": 0
+      },
+      "projected_race_day_tsb": -7.9,
+      "tsb_target_range": {
+        "min": 10,
+        "max": 25
+      },
+      "today": {
+        "label": "Race day",
+        "load_target_tss": {
+          "min": 0,
+          "max": 0
+        },
+        "zones": "Race effort",
+        "purpose": "Go/no-go assessment. Execute race plan."
+      },
+      "carb_loading": {
+        "applicable": true,
+        "active": true,
+        "starts": "D-4",
+        "start_date": "2026-07-01",
+        "note": "10-12 g\u00b7kg\u207b\u00b9/day. No depletion phase needed."
+      },
+      "opener": {
+        "day": "D-2",
+        "date": "2026-07-03",
+        "intensity": "lighter"
+      },
+      "go_no_go": {
+        "tsb_status": "flag",
+        "notes": [
+          "Projected race-day TSB -7.9 is significantly below target range 10-25. Fatigue may impact performance."
+        ]
+      }
     }
   }
 }
