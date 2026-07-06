@@ -1,58 +1,10 @@
 {
-  "generated_at": "2026-07-05T23:44:04.924528",
+  "generated_at": "2026-07-06T01:25:55.458141",
   "version": "3.112",
   "script_hash": "a60c2ee19b34",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i159032997",
-      "date": "2026-06-21",
-      "type": "Ride",
-      "name": "Valencia Road Cycling",
-      "interval_summary": [
-        "1x 19s 390w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1093,
-          "avg_power": 106,
-          "max_power": 405,
-          "avg_hr": 109,
-          "max_hr": 125,
-          "avg_cadence": 55.341206,
-          "zone": 1,
-          "training_load": 6.4520445,
-          "decoupling": -22.999403
-        },
-        {
-          "type": "WORK",
-          "label": "19s@390w62rpm",
-          "duration_secs": 19,
-          "avg_power": 390,
-          "max_power": 434,
-          "avg_hr": 130,
-          "max_hr": 136,
-          "avg_cadence": 62.263157,
-          "zone": 7,
-          "training_load": 0.511024,
-          "decoupling": 13.838484
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 3746,
-          "avg_power": 116,
-          "max_power": 769,
-          "avg_hr": 113,
-          "max_hr": 138,
-          "avg_cadence": 64.345345,
-          "zone": 1,
-          "training_load": 32.348595,
-          "decoupling": -1.6857079
-        }
-      ]
-    },
     {
       "activity_id": "i160189777",
       "date": "2026-06-25",
