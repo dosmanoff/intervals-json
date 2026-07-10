@@ -1,31 +1,10 @@
 {
-  "generated_at": "2026-07-09T23:08:36.511522",
+  "generated_at": "2026-07-10T00:18:21.207690",
   "version": "3.112",
   "script_hash": "a60c2ee19b34",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i160189777",
-      "date": "2026-06-25",
-      "type": "Ride",
-      "name": "Valencia Road Cycling",
-      "interval_summary": null,
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 8112,
-          "avg_power": 131,
-          "max_power": 877,
-          "avg_hr": 131,
-          "max_hr": 167,
-          "avg_cadence": 69.329254,
-          "zone": 1,
-          "training_load": 101.69007,
-          "decoupling": 16.856495
-        }
-      ]
-    },
     {
       "activity_id": "i160452642",
       "date": "2026-06-26",
