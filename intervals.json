@@ -1,105 +1,10 @@
 {
-  "generated_at": "2026-07-15T23:04:29.936179",
+  "generated_at": "2026-07-16T00:08:40.875123",
   "version": "3.112",
   "script_hash": "a60c2ee19b34",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i161766455",
-      "date": "2026-07-01",
-      "type": "MountainBikeRide",
-      "name": "Monachil Mountain Biking",
-      "interval_summary": [
-        "4x 37m31s 127bpm",
-        "1x 26m59s 120bpm",
-        "1x 53m33s 123bpm",
-        "1x 10m12s 99bpm",
-        "1x 13m49s 106bpm",
-        "1x 5m38s 92bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "2251s@127bpm",
-          "duration_secs": 2173,
-          "avg_hr": 122,
-          "max_hr": 141,
-          "zone": 1
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 2,
-          "avg_hr": 122,
-          "max_hr": 123,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "2251s@127bpm",
-          "duration_secs": 1964,
-          "avg_hr": 132,
-          "max_hr": 146,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "2251s@127bpm",
-          "duration_secs": 2365,
-          "avg_hr": 123,
-          "max_hr": 147,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "1619s@120bpm",
-          "duration_secs": 1619,
-          "avg_hr": 120,
-          "max_hr": 137,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "2251s@127bpm",
-          "duration_secs": 2500,
-          "avg_hr": 132,
-          "max_hr": 141,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "3213s@123bpm",
-          "duration_secs": 3213,
-          "avg_hr": 123,
-          "max_hr": 155,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "612s@99bpm",
-          "duration_secs": 612,
-          "avg_hr": 99,
-          "max_hr": 113,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "829s@106bpm",
-          "duration_secs": 829,
-          "avg_hr": 106,
-          "max_hr": 119,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "338s@92bpm",
-          "duration_secs": 338,
-          "avg_hr": 92,
-          "max_hr": 109,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i162737038",
       "date": "2026-07-04",
