@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T11:52:44.583896",
+  "generated_at": "2026-08-08T12:38:11.449779",
   "version": "3.112",
   "script_hash": "a60c2ee19b34",
   "scan_hours": 72,
@@ -553,6 +553,106 @@
           "zone": 1,
           "training_load": 6.6882935,
           "decoupling": -12.27758
+        }
+      ]
+    },
+    {
+      "activity_id": "i173711745",
+      "date": "2026-08-08",
+      "type": "Ride",
+      "name": "Valencia Road Cycling",
+      "interval_summary": [
+        "1x 64s 301w",
+        "1x 4m20s 221w",
+        "1x 15s 439w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 4258,
+          "avg_power": 152,
+          "max_power": 494,
+          "avg_hr": 136,
+          "max_hr": 165,
+          "avg_cadence": 76.58977,
+          "zone": 2,
+          "training_load": 55.013725,
+          "decoupling": -11.412945
+        },
+        {
+          "type": "WORK",
+          "label": "64s@301w70rpm",
+          "duration_secs": 64,
+          "avg_power": 301,
+          "max_power": 397,
+          "avg_hr": 153,
+          "max_hr": 164,
+          "avg_cadence": 69.96875,
+          "zone": 6,
+          "training_load": 2.214144,
+          "decoupling": -7.334551
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 803,
+          "avg_power": 170,
+          "max_power": 388,
+          "avg_hr": 140,
+          "max_hr": 167,
+          "avg_cadence": 69.80848,
+          "zone": 2,
+          "training_load": 11.474798,
+          "decoupling": 3.8575168
+        },
+        {
+          "type": "WORK",
+          "label": "260s@221w76rpm",
+          "duration_secs": 260,
+          "avg_power": 221,
+          "max_power": 299,
+          "avg_hr": 152,
+          "max_hr": 157,
+          "avg_cadence": 75.67308,
+          "zone": 3,
+          "training_load": 5.592889,
+          "decoupling": 7.3062873
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 2995,
+          "avg_power": 106,
+          "max_power": 444,
+          "avg_hr": 123,
+          "max_hr": 154,
+          "avg_cadence": 56.50798,
+          "zone": 1,
+          "training_load": 15.440066,
+          "decoupling": -26.941208
+        },
+        {
+          "type": "WORK",
+          "label": "15s@439w68rpm",
+          "duration_secs": 15,
+          "avg_power": 439,
+          "max_power": 465,
+          "avg_hr": 132,
+          "max_hr": 141,
+          "avg_cadence": 68.46667,
+          "zone": 7,
+          "training_load": 0.30530667,
+          "decoupling": 4.2280054
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 16776,
+          "avg_power": 106,
+          "max_power": 729,
+          "avg_hr": 129,
+          "max_hr": 156,
+          "avg_cadence": 58.126408,
+          "zone": 1,
+          "training_load": 125.47034,
+          "decoupling": 8.571417
         }
       ]
     }
